@@ -1,43 +1,24 @@
+ ## PLEASE READ THE FOLLOWING TO KNOW ABOUT THE ACCESS GIVEN TO ADMIN , CUSTOMER AND ENGINEER ##
+ 
+                           ** CRM Application **
+        
+## admin_activities ##
+                
+ * "Admin can only see the details of users('The people who have logged In either admin , engineer and customer') and tickets in both frontend and backend",
 
-# CRM App backend [ Session 6 ]
-## _Learning the development of RESTful APIs for backend_ 
+ * "Admin have access to update the ticket(note : allocate to any engineer , update the status , update the priority),
 
-This code base contains logic/structure  for creating the Restful APIs for the CRM app
-## Features
-* Call the Notification service everytime a new ticket is created, to send email to the reporter and assignee
-* Call the Notification service everytime a ticket is updated, to send email to all the stakeholders
-
-
-
-More details around this can be found [here](https://docs.google.com/document/d/1x866VrSsjchFf7dhD7U2zYLbzj-tt34STWuDMMyL6Uc/edit?usp=sharing) 
-
-## How is the code organized in this repo ?
-The whole repo is divided into multiple branches. Each branch contains code for a specific concept. For example _session1_ has the code base for user registration and login . Each branch is built on the top of the previous branch
-
-## Prerequisite
-- Understanding of Node.js
-- Understanding of Async Await
-- Mongo DB locally installed and running
-
-## Tech
-- Node.js
-- Mongodb
-
-
-## Installation
-
-this app requires [Node.js](https://nodejs.org/) v14+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-
-```sh
-cd crm_backend
-npm install
-npm run devStart
-```
-
-## Development
-
-Want to improve? Great!
-Make the changes and raise a PR. Reach out to me over atulsingh15743@gmail.com
+ * "Admin have access to accept & update the engineers(note : accept , update and read the details of all users)
+                
+## engineer_activities ##
+         
+ * Engineer can see the details of tickets('The admin who have assigned the tickets to particular engineer),
+                
+ * Engineer have access to update the tickets raised by the customers,
+            
+## customer_activities ##
+            
+* Only customer can raise the tickets,
+                
+* Customer have access to update the ticket details of description , priority and status,
+      
